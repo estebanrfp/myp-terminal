@@ -36,7 +36,7 @@ $(document).ready(function() {
             var valor = $(this).val();
             $(this).val('');
             $('.clone').text('');
-            $('#result').append('<p class="comando">'+valor+'</p>');
+            $('#answer').append('<p class="command">'+valor+'</p>');
 
             caso = valor.split(' ');
 
@@ -45,13 +45,13 @@ $(document).ready(function() {
 
             if (commands[action] === undefined) {
                 
-                $('#result').append('<p class="result">Comando "'+action+'" no identificado.<br />Para ver lista de comandos, escribe: help</p>');
+                $('#answer').append('<p class="answer">Command "'+action+'" no identificado.<br />Para ver lista de comandos, escribe: help</p>');
             
             } else {
                 
                 if (action == "clear") {
 
-                    $('#result, .info').empty();
+                    $('#answer, .info').empty();
 
                 }else if (action == "alert") {
                     
@@ -72,17 +72,17 @@ $(document).ready(function() {
         
         if (commands[action]) {
 
-        if(value != undefined && value != ''){
-              alert(value);
-        }
+            if(value != undefined && value != ''){
+                  alert(value);
+            }
 
-        // var value = commands[action];
-        // var func = new Function(x);
-        // func();
-        //$('#result').append('<p class="result">'+value+'</p>'); // Simulamos result
+        var value = commands[action];
+        var func = new Function(x);
+        func();
+        $('#answer').append('<p class="answer">'+value+'</p>'); // Simulamos answer
         
         } else {
-            $('#result, .info').empty();
+            $('#answer, .info').empty();
         }
     }
 
@@ -94,11 +94,11 @@ $(document).ready(function() {
 
             // var func = new Function(x);
             // func();
-            $('#result').append('<p class="result">'+x+'</p>');
+            $('#answer').append('<p class="answer">'+x+'</p>');
         
         } else {
             
-            $('#result, .info').empty();
+            $('#answer, .info').empty();
         }
     }
 

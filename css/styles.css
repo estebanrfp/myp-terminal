@@ -49,7 +49,7 @@ p, span {
     font-size: 0.9em;
 }
 
-.comand:before {
+.command:before {
     content: '$ ';
 }
 
