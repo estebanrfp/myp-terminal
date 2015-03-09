@@ -1,0 +1,47 @@
+#datos{
+	color: orange;
+	font-family:Consolas,monospace;
+	position:relative;
+	float:left;
+	font-size:100%;
+}
+
+#datos span{
+	position:absolute;
+	top:0;
+	right:0;
+	width:0;
+	background-color: #FFFFFF;
+	border-left: .1em solid #000000;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	animation: escribiendo 1s steps(36, end), parpadeo 1s step-end infinite;
+	-webkit-animation: escribiendo 1s steps(36, end), parpadeo 1s step-end infinite;
+	-moz-animation: escribiendo 1s steps(36, end), parpadeo 1s step-end infinite;
+}
+
+@keyframes parpadeo{
+	from, to{border-color:transparent}
+	50%{border-color: #000000}
+}
+@keyframes escribiendo{
+	from{width:100%}
+	to{width:0}
+}
+@-webkit-keyframes parpadeo{
+	from, to{border-color:transparent}
+	50%{border-color: #000000}
+}
+@-webkit-keyframes escribiendo{
+	from{width:100%}
+	to{width:0}
+}
+@-moz-keyframes parpadeo {
+	from, to{border-color:transparent}
+	50%{border-color: #000000}
+}
+@-moz-keyframes escribiendo {
+	from{width:100%}
+	to{width:0}
+}

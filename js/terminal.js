@@ -56,6 +56,7 @@ $(document).ready(function() {
                 }else if (action == "alert") {
                     
                     action_fnc(action, value);
+                   
                 
                 }else{
                     
@@ -80,6 +81,7 @@ $(document).ready(function() {
         var func = new Function(x);
         func();
         $('#answer').append('<p class="answer">'+value+'</p>'); // Simulamos answer
+
         
         } else {
             $('#answer, .info').empty();
@@ -95,6 +97,7 @@ $(document).ready(function() {
             // var func = new Function(x);
             // func();
             $('#answer').append('<p class="answer">'+x+'</p>');
+            $('#datos').append('<p>Mi nombre es Esteban Fuster Pozzi..<span>&nbsp;</span></p>');
         
         } else {
             
