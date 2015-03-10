@@ -94,8 +94,13 @@ $(document).ready(function() {
             // if (x = "") {};
             // var func = new Function(x);
             // func();
+            if (action == 'help') {
+                $('#answer').append('<p class="answer">'+x+'</p>');
+            }else{
+                $('#datos').append(x);
+            }
 
-            $('#answer').append('<p class="answer">'+x+'</p>');
+            
         
         } else {
             
