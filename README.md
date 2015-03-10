@@ -7,11 +7,12 @@ Portfolio que simula una Terminal con comandos de consola, puro css3 y javascrip
 
 Si te gusta la idea inicial, te animo a mejorarla, suma tu propuesta al proyecto.
 
-Se acepta todo tipo de pull request, nuestra intención de base sobre este repositorio es el entrenamiento y uso de buenas practicas con Git y GitHub. 
+Se acepta todo tipo de pull request, nuestra intención de base sobre este repositorio es el entrenamiento y uso de buenas practicas con Git y GitHub.
 
 [demo](https://estebanrfp.github.io/myp-terminal)
 
 Esteban Fuster Pozzi / @estebanrfp
+Slvr                 / @slvrkl
 
 Visite nuestro portal de tecnologías para la web:
 
