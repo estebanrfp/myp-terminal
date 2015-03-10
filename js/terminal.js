@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    $('#datos').append('<p>Para obtener mis datos, escriba alguna de las opciónes listadas...<span>&nbsp;</span></p>');
     
     function focus() { 
         
@@ -54,12 +56,6 @@ $(document).ready(function() {
                 if (action == "clear") {
 
                     $('#answer, .info').empty();
-
-                }else if (action == "help") {
-                    
-                    //action_fnc(action, value);
-                    $('#datos').append('<p>Para obtener mis datos, escriba alguna de las opciónes listadas...<span>&nbsp;</span></p>');
-                   
                 
                 }else{
                     
@@ -72,35 +68,34 @@ $(document).ready(function() {
         }
     });
 
-    function action_fnc(action, value) {
+    // function action_fnc(action, value) {
         
-        if (commands[action]) {
+    //     if (commands[action]) {
 
-            if(value != undefined && value != ''){
-                  alert(value);
-            }
+    //         if(value != undefined && value != ''){
+    //               alert(value);
+    //         }
 
-        var value = commands[action];
-        var func = new Function(x);
-        func();
-        $('#answer').append('<p class="answer">'+value+'</p>'); // Simulamos answer
+    //     var value = commands[action];
+    //     var func = new Function(x);
+    //     func();
+    //     $('#answer').append('<p class="answer">'+value+'</p>'); // Simulamos answer
 
         
-        } else {
-            $('#answer, .info').empty();
-        }
-    }
+    //     } else {
+    //         $('#answer, .info').empty();
+    //     }
+    // }
 
     function terminal(action) {
         
         if (commands[action]) {
             var x = commands[action];
             // if (x = "") {};
-
             // var func = new Function(x);
             // func();
+
             $('#answer').append('<p class="answer">'+x+'</p>');
-            $('#datos').append('<p>Mi nombre es Esteban Fuster Pozzi..<span>&nbsp;</span></p>');
         
         } else {
             
