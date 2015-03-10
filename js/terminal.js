@@ -48,14 +48,17 @@ $(document).ready(function() {
                 $('#answer').append('<p class="answer">Command "'+action+'" no identificado.<br />Para ver lista de comandos, escribe: help</p>');
             
             } else {
+
+                $('#datos').empty();
                 
                 if (action == "clear") {
 
                     $('#answer, .info').empty();
 
-                }else if (action == "alert") {
+                }else if (action == "help") {
                     
-                    action_fnc(action, value);
+                    //action_fnc(action, value);
+                    $('#datos').append('<p>Para obtener mis datos, escriba alguna de las opciónes listadas...<span>&nbsp;</span></p>');
                    
                 
                 }else{
