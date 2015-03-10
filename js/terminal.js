@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#datos').append('<p>Para obtener mis datos, escriba alguna de las opciónes listadas...<span>&nbsp;</span></p>');
+    $('#datos').append('<p>Para obtener el listado de opciones, escribe help en el terminal<span>&nbsp;</span></p>');
     
     function focus() { 
         
@@ -96,11 +96,10 @@ $(document).ready(function() {
             // func();
             if (action == 'help') {
                 $('#answer').append('<p class="answer">'+x+'</p>');
+                $('#datos').append('<p>Para obtener mis datos, escriba alguna de las opciónes listadas...<span>&nbsp;</span></p>');
             }else{
                 $('#datos').append(x);
             }
-
-            
         
         } else {
             
