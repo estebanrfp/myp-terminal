@@ -6,6 +6,14 @@ body {
 
 }
 
+#datos{
+    color: orange;
+    font-family:Consolas,monospace;
+    position:relative;
+    float:left;
+    font-size:100%;
+}
+
 #terminal {
     position: absolute;
     bottom:0;

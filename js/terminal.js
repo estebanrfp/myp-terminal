@@ -1,33 +1,25 @@
 $(document).ready(function() {
 
-    $('#datos').append('<p>Para obtener el listado de opciones, escribe help en el terminal<span>&nbsp;</span></p>');
+    maquina("datos",'Para obtener el listado de opciones, escribe help en el terminal',30);
     
-    function focus() { 
-        
+    function focus() {         
         $('#user').focus(); 
-
     }
     
     $('.terminal').show(); focus();
     
     $(window).focus(function() {
-
         focus();
         $('#user').val($('#user').val());
-
     });
     
     $(document).click(function(e) {
-
         focus();
         $('#user').val($('#user').val());
-
     });
     
     $('#user').on('input',function(e){
-
         $('.clone').text($(this).val());
-
     });
 
     $('#user').keypress(function(e) {
@@ -68,43 +60,31 @@ $(document).ready(function() {
         }
     });
 
-    // function action_fnc(action, value) {
-        
-    //     if (commands[action]) {
-
-    //         if(value != undefined && value != ''){
-    //               alert(value);
-    //         }
-
-    //     var value = commands[action];
-    //     var func = new Function(x);
-    //     func();
-    //     $('#answer').append('<p class="answer">'+value+'</p>'); // Simulamos answer
-
-        
-    //     } else {
-    //         $('#answer, .info').empty();
-    //     }
-    // }
-
     function terminal(action) {
         
         if (commands[action]) {
+
             var x = commands[action];
             // if (x = "") {};
             // var func = new Function(x);
             // func();
             if (action == 'help') {
+                
                 $('#answer').append('<p class="answer">'+x+'</p>');
-                $('#datos').append('<p>Para obtener mis datos, escriba alguna de las opciónes listadas...<span>&nbsp;</span></p>');
+               
+                maquina("datos",'Para obtener mis datos, escriba alguna de las opciónes listadas...',30);
+            
             }else{
-                $('#datos').append(x);
+
+                maquina("datos",x,30);
+
             }
         
         } else {
             
             $('#answer, .info').empty();
         }
+
     }
 
     $('.blink').each(function() {
@@ -125,5 +105,27 @@ $(document).ready(function() {
         
         }, 500);
     });
+
+    function maquina(contenedor, texto, intervalo){
+
+       longitud = texto.length;
+
+       cnt = document.getElementById(contenedor);
+       var i=0;
+
+       timer = setInterval(function(){
+
+          cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "|";
+
+          if(i >= longitud){
+
+             clearInterval(timer);
+             cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
+             return true;
+          } else {
+
+             i++;
+          }},intervalo);
+    };
 
 });
