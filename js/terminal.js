@@ -65,9 +65,7 @@ $(document).ready(function() {
         if (commands[action]) {
 
             var x = commands[action];
-            // if (x = "") {};
-            // var func = new Function(x);
-            // func();
+
             if (action == 'help') {
                 
                 $('#answer').append('<p class="answer">'+x+'</p>');
@@ -108,24 +106,31 @@ $(document).ready(function() {
 
     function maquina(contenedor, texto, intervalo){
 
-       longitud = texto.length;
+        function randomIntFromInterval(min,max){
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
 
-       cnt = document.getElementById(contenedor);
-       var i=0;
+        longitud = texto.length;
 
-       timer = setInterval(function(){
+        cnt = document.getElementById(contenedor);
+        var i=0;
 
-          cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "|";
+        var timer = setInterval(function(){
 
-          if(i >= longitud){
+        cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "|";
 
-             clearInterval(timer);
-             cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
-             return true;
-          } else {
+        if(i >= longitud){
 
-             i++;
-          }},intervalo);
+            clearInterval(timer);
+            cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
+            return true;
+            
+        } else {
+
+            i++;
+
+        }},intervalo);
+
     };
 
 });
