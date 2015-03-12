@@ -1,4 +1,4 @@
-myp-terminal
+﻿myp-terminal
 ============
 
 Mi portfolio emulador de terminal con CSS3
@@ -13,6 +13,7 @@ Se acepta todo tipo de pull request, nuestra intención de base sobre este repos
 
 Esteban Fuster Pozzi / @estebanrfp
 Slvr                 / @slvrkl
+Agustín Palmieri / @aguja2013
 
 Visite nuestro portal de tecnologías para la web:
 
