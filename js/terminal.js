@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    maquina("datos",'Para obtener el listado de opciones, escribe help en el terminal',30);
+    maquina("datos",'Para obtener el listado de opciones, escribe [help] en el terminal',30);
     
     function focus() {         
         $('#user').focus(); 
@@ -54,9 +54,7 @@ $(document).ready(function() {
                     terminal(action);
                 
                 };
-
             }
-
         }
     });
 

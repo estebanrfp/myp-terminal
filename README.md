@@ -12,7 +12,7 @@ Se acepta todo tipo de pull request, nuestra intención de base sobre este repos
 [demo](https://estebanrfp.github.io/myp-terminal)
 
 Esteban Fuster Pozzi / @estebanrfp
-Slvr                 / @slvrkl
+Slvr / @slvrkl
 Agustín Palmieri / @aguja2013
 
 Visite nuestro portal de tecnologías para la web:
