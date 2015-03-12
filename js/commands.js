@@ -5,7 +5,7 @@ var commands = {
 	'i': 'Hola, soy @estebanrfp, Fullstack developer, entusiasta de la tecnología web.',
 	'es': 'estudios cursados.',
 	'hab': 'habilidades, frontend, backend.',
-	'tr': 'trabajos.',
-	'py': 'proyectos.',
-	'cnt': 'contacto.'
+	'tr': 'mis trabajos realizados.',
+	'py': 'mis proyectos.',
+	'cnt': 'mi información de contacto.'
 }
