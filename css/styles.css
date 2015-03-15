@@ -59,15 +59,70 @@ p, span {
 .barra-left {
 	position: absolute;	
 	left: 20%;
-	top: 10%;	
+	top: 10%;
+	-webkit-animation: barra-left 3s infinite;
+	animation: barra-left 3s infinite;
 }
 
 .barra-right {
 	position: absolute;	
 	right: 20%;
 	top: 10%;	
+	-webkit-animation: barra-right 3s infinite;
+	animation: barra-right 3s infinite;
 }
-
+@-webkit-keyframes barra-left {
+     0% {
+		opacity: 0;
+		left: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		left: 15%;
+		}
+}
+@keyframes barra-left {
+     0% {
+		opacity: 0;
+		left: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		left: 15%;
+		}
+}
+@-webkit-keyframes barra-right {
+      0% {
+		opacity: 0;
+		right: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		right: 15%;
+		}
+}
+@keyframes barra-right {
+     0% {
+		opacity: 0;
+		right: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		right: 15%;
+		}
+}
 .blink {
     background-color: white;
     display: inline-block;
@@ -104,6 +159,15 @@ p, span {
 	position: absolute;
 	right:0;
 	top: 15%;
+	transition: 2s;
+}
+
+.rueda:hover {
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg); 
+    -o-transform: rotate(360deg) ;
+    -ms-transform: rotate(360deg);
 }
 
 .terminal {   
