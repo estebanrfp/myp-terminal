@@ -25,10 +25,10 @@ p, span {
     color: orange;
     font-family:Consolas,monospace;   
     font-size:100%;
+	width: 80%;
+	left: 10%;
 	position: absolute;
 	bottom: 5%;
-	left: 10%;
-	width: 80%;
 }
 
 #terminal {
