@@ -1,77 +1,76 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
     background: white;
     color: white;
-    overflow: hidden;
-
-}
-
-#datos{
-    color: orange;
-    font-family:Consolas,monospace;
-    position:relative;
-    float:left;
-    font-size:100%;
-}
-
-#terminal {
-    position: absolute;
-    bottom:0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background-color: #222;
     font-family: 'Ubuntu', sans-serif;
-    color: #999;
+    overflow: hidden;
 }
 
-#title {
-    position: relative;
-    width: 100%;
-    height: 20px;
-    background: orange;
-}
-
-#title p {
-    line-height: 20px;
-    color: #222;
-    padding-left: 15px;
-    font-size: 0.8em;
+input {
+    background: transparent;
+    border: none;
+    color: transparent;
+    outline: none;
+    width: 1px;
 }
 
 p, span {
     margin-top: 0px;  
 }
 
-.terminal {
-    padding-left: 5px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    height: 265px;
-    overflow: auto;
+#datos{
+    color: orange;
+    float:left;
+    font-family:Consolas,monospace;
+    font-size:100%;
+    position:relative;
 }
 
-.info p, .terminal {
-    display: none;
-    word-wrap: break-word;
-    font-size: 0.9em;
+#terminal {
+    background-color: #222;
+    bottom:0;
+    color: #999;
+    font-family: 'Ubuntu', sans-serif;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#title {
+    background: orange;
+    height: 20px;
+    position: relative;
+    width: 100%;
+}
+
+#title p {
+    color: #222;
+    font-size: 0.8em;
+    line-height: 20px;
+    padding-left: 15px;
 }
 
 .command:before {
     content: '$ ';
 }
 
-input {
-    border: none;
-    outline: none;
-    width: 1px;
-    background: transparent;
-    color: transparent;
+.info p, .terminal {
+    display: none;
+    font-size: 0.9em;
+    word-wrap: break-word;
+}
+
+.terminal {
+    height: 265px;
+    overflow: auto;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 4px;
 }
 
 .blink {
-    width: 5px;
-    height: 13px;
-    display: inline-block;
     background-color: white;
+    display: inline-block;
+    height: 13px;
+    width: 5px;
 }​
