@@ -59,6 +59,11 @@ $(document).ready(function() {
     });
 
     function terminal(action) {
+		
+		if (action == 'i') {              
+					$('.monitor-info').css({ "opacity": 1});
+					$('.monitor-home').css({ "opacity": 0});            
+            }
         
         if (commands[action]) {
 
@@ -69,6 +74,10 @@ $(document).ready(function() {
                 $('#answer').append('<p class="answer">'+x+'</p>');
                
                 maquina("datos",'Para obtener mis datos, escriba alguna de las opciónes listadas...',30);
+				
+				$('.monitor-home').css({ "opacity": 1});
+				$('.monitor-info').css({ "opacity": 0});
+				$('.images1').fadeOut(500);
             
             }else{
 

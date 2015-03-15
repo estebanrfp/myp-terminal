@@ -147,7 +147,7 @@ p, span {
 	margin: 0 auto;	
 	position: relative;
 	width: 95%;
-	color: #00FFFF;	
+	color: #CFD8DC;	
 }
 
 .monitor-img {
@@ -156,18 +156,20 @@ p, span {
 }
 
 .monitor-home {
-	transition: 5s;
-	position: absolute;		
+	transition: 2s;
+	position: absolute;	
+	opacity: 0;
 	top: 18%;
 	left: 25%;
-	font-size: 4em;	
+	font-size: 2em;	
 }
 .monitor-info {
-	transition: 5s;
+	transition: 2s;
 	position: absolute;	
+	opacity: 0;
 	top: 18%;
 	left: 25%;
-	font-size: 4em;	
+	font-size: 2em;	
 }
 
 .rueda {
