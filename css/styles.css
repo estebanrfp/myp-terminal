@@ -54,6 +54,25 @@ p, span {
     padding-left: 15px;
 }
 
+.barra-left {
+	position: absolute;	
+	left: 20%;
+	top: 10%;	
+}
+
+.barra-right {
+	position: absolute;	
+	right: 20%;
+	top: 10%;	
+}
+
+.blink {
+    background-color: white;
+    display: inline-block;
+    height: 13px;
+    width: 5px;
+}
+
 .command:before {
     content: '$ ';
 }
@@ -65,8 +84,19 @@ p, span {
 }
 
 .monitor {	
-	width: 95%;	
 	margin: 0 auto;	
+	width: 95%;	
+	position: relative;
+}
+
+.rueda {
+	bottom: 15%;
+	left:0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	right:0;
+	top: 15%;
 }
 
 .terminal {   
@@ -76,9 +106,5 @@ p, span {
     padding-top: 4px;
 }
 
-.blink {
-    background-color: white;
-    display: inline-block;
-    height: 13px;
-    width: 5px;
-}​
+​
+
