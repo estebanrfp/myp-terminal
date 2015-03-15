@@ -5,6 +5,10 @@ body {
     overflow: hidden;
 }
 
+img {
+	max-width: 100%;
+}
+
 input {
     background: transparent;
     border: none;
@@ -58,6 +62,11 @@ p, span {
     display: none;
     font-size: 0.9em;
     word-wrap: break-word;
+}
+
+.monitor {	
+	width: 95%;	
+	margin: 0 auto;	
 }
 
 .terminal {
