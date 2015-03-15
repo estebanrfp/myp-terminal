@@ -23,10 +23,12 @@ p, span {
 
 #datos{
     color: orange;
-    float:left;
-    font-family:Consolas,monospace;
+    font-family:Consolas,monospace;   
     font-size:100%;
-    position:relative;
+	position: absolute;
+	bottom: 5%;
+	left: 10%;
+	width: 80%;
 }
 
 #terminal {
@@ -85,8 +87,13 @@ p, span {
 
 .monitor {	
 	margin: 0 auto;	
-	width: 95%;	
 	position: relative;
+	width: 95%;	
+}
+
+.monitor-img {
+	max-height: 400px;
+	width: 100%;
 }
 
 .rueda {
