@@ -34,7 +34,7 @@ p, span {
     bottom:0;
     color: #999;
     font-family: 'Ubuntu', sans-serif;
-    height: 300px;
+    height: 200px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -69,8 +69,7 @@ p, span {
 	margin: 0 auto;	
 }
 
-.terminal {
-    height: 265px;
+.terminal {   
     overflow: auto;
     padding-bottom: 4px;
     padding-left: 5px;
