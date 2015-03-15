@@ -143,15 +143,31 @@ p, span {
 }
 
 .monitor {	
-	font-family: 'Wallpoet; 
+	font-family: 'Wallpoet'; 
 	margin: 0 auto;	
 	position: relative;
-	width: 95%;	
+	width: 95%;
+	color: #00FFFF;	
 }
 
 .monitor-img {
 	max-height: 400px;
 	width: 100%;
+}
+
+.monitor-home {
+	transition: 5s;
+	position: absolute;		
+	top: 18%;
+	left: 25%;
+	font-size: 4em;	
+}
+.monitor-info {
+	transition: 5s;
+	position: absolute;	
+	top: 18%;
+	left: 25%;
+	font-size: 4em;	
 }
 
 .rueda {
