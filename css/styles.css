@@ -1,5 +1,83 @@
 @import url(http://fonts.googleapis.com/css?family=Wallpoet);
 
+
+@font-face {
+    font-family: 'digital_dream_fat_narrowRg';
+    src: url('DIGITALDREAMFATNARROW-webfont.eot');
+    src: url('DIGITALDREAMFATNARROW-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DIGITALDREAMFATNARROW-webfont.woff2') format('woff2'),
+         url('DIGITALDREAMFATNARROW-webfont.woff') format('woff'),
+         url('DIGITALDREAMFATNARROW-webfont.ttf') format('truetype'),
+         url('DIGITALDREAMFATNARROW-webfont.svg#digital_dream_fat_narrowRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?m5taku');
+	src:url('fonts/icomoon.eot?#iefixm5taku') format('embedded-opentype'),
+		url('fonts/icomoon.woff?m5taku') format('woff'),
+		url('fonts/icomoon.ttf?m5taku') format('truetype'),
+		url('fonts/icomoon.svg?m5taku#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-graduation-cap:before {
+	content: "\e600";
+}
+
+.icon-folder-open:before {
+	content: "\e930";
+}
+
+.icon-bubbles3:before {
+	content: "\e96f";
+}
+
+.icon-magic-wand:before {
+	content: "\e997";
+}
+
+.icon-briefcase:before {
+	content: "\e9ae";
+}
+
+.icon-eye:before {
+	content: "\e9ce";
+}
+
+.icon-facebook2:before {
+	content: "\ea8d";
+}
+
+.icon-twitter:before {
+	content: "\ea91";
+}
+
+.icon-github2:before {
+	content: "\eab2";
+}
+
+.icon-linkedin:before {
+	content: "\eac8";
+}
+
 body {
     background: #1A1A1A;
     color: white;
