@@ -1,0 +1,192 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Wallpoet);
+@import "fonts.styl"
+@import "normalize.styl"
+
+body
+  background #1A1A1A
+  color white
+  font-family 'Ubuntu', sans-serif
+  overflow hidden
+  font-size 16px
+
+img
+  max-width 100%
+
+input
+  background transparent
+  border none
+  color transparent
+  outline none
+  width 1px
+
+p, span
+  margin-top 0px
+
+#datos
+  color orange
+  font-family Consolas,monospace
+  font-size 1em
+  width 80%
+  left 10%
+  position absolute
+  bottom 5%
+
+#terminal
+  background-color #222
+  bottom 0
+  color #999
+  font-family 'Ubuntu', sans-serif
+  height 200px
+  left 0
+  position absolute
+  width 100%
+
+#title
+  background orange
+  height 20px
+  position relative
+  width 100%
+  p
+    color #222
+    font-size 0.8em
+    line-height 20px
+    padding-left 15px
+
+.barra-left
+  position absolute
+  left 20%
+  top 10%
+  -webkit-animation barra-left 3s infinite
+  animation barra-left 3s infinite
+
+.barra-right
+  position absolute
+  right 20%
+  top 10%
+  -webkit-animation barra-right 3s infinite
+  animation barra-right 3s infinite
+
+@keyframes barra-left
+    0% 
+		opacity 0
+		left 20%
+
+	70%
+		opacity 1
+		
+	100%
+		opacity .1
+		left 15%
+		
+@keyframes barra-right 
+    0% 
+		opacity 0
+		right: 20%
+		
+	 70% 
+		opacity 1		
+		  
+    100% 
+		opacity .1
+		right 15%
+		
+
+
+.blink
+	background-color white
+    display inline-block
+    height 13px
+    width 5px
+ 
+
+.command
+  &:before
+    content '$ '
+
+.info p, .terminal
+  display none
+  font-size 0.9em
+  word-wrap break-word
+
+.monitor
+  color #CFD8DC
+  font-family 'Wallpoet'
+  margin 0 auto
+  position relative
+  width 95%
+  width 75%
+
+.monitor-img
+
+.monitor-img-gde
+  display none
+  display block
+
+.monitor-home
+  font-size 2em
+  left 25%
+  opacity 0
+  position absolute
+  top 18%
+  transition 2s
+
+.monitor-info
+  font-size 2em
+  left 25%
+  opacity 0
+  position absolute
+  top 18%
+  transition 2s
+
+.rueda
+  bottom 15%
+  height 130px
+  left 0
+  margin-left auto
+  margin-right auto
+  position absolute
+  right 0
+  top 15%
+  transition 2s
+  width 130px
+  &:hover
+    transform rotate(360deg)
+    -webkit-transform rotate(360deg)
+    -moz-transform rotate(360deg)
+    -o-transform rotate(360deg)
+    -ms-transform rotate(360deg)
+
+.terminal
+  overflow auto
+  padding-bottom 4px
+  padding-left 5px
+  padding-top 4px
+
+@media screen and (min-width: 450px) 
+/* 	#datos{		
+		bottom: 11%;
+} */
+	.monitor-img 
+		display none
+
+	.monitor-img-gde 		
+		display block
+
+
+
+
+@media screen and (min-width: 800px) 
+	#datos	
+		bottom 2%
+		font-size 1.2em
+
+
+
+@media screen and (min-width: 917px) 
+	#datos		
+		bottom 5%
+
+	.monitor 	
+		width 75%	
+
+
