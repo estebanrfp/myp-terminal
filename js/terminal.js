@@ -73,7 +73,7 @@ $(document).ready(function() {
                 
                 $('#answer').append('<p class="answer">'+x+'</p>');
                
-                maquina("datos",'Para obtener mis datos, escriba alguna de las opciónes listadas...',30);
+                maquina("datos",'Para obtener mis datos, escriba alguna de las opciones listadas...',30);
 				
 				$('.monitor-home').css({ "opacity": 1});
 				$('.monitor-info').css({ "opacity": 0});

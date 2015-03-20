@@ -23,20 +23,23 @@ p, span
   margin-top 0px
 
 #datos
-  color orange
-  font-family Consolas,monospace
+  color #00FFFF
+  font-family 'digital'
   font-size 1em
   width 80%
   left 10%
   position absolute
   bottom 5%
+  border-top 1px dotted #00FFFF
+  padding-top 1em
+  line-height 1.4
 
 #terminal
   background-color #222
   bottom 0
   color #999
   font-family 'Ubuntu', sans-serif
-  height 200px
+  height 175px
   left 0
   position absolute
   width 100%
@@ -55,41 +58,72 @@ p, span
 .barra-left
   position absolute
   left 20%
-  top 10%
-  -webkit-animation barra-left 3s infinite
-  animation barra-left 3s infinite
+  top 13% 
+  animation 3s barra-left infinite
 
 .barra-right
   position absolute
   right 20%
-  top 10%
-  -webkit-animation barra-right 3s infinite
-  animation barra-right 3s infinite
+  top 13% 
+  animation 3s barra-right infinite
 
-@keyframes barra-left
-    0% 
-		opacity 0
-		left 20%
-
-	70%
-		opacity 1
-		
-	100%
-		opacity .1
-		left 15%
-		
-@keyframes barra-right 
-    0% 
-		opacity 0
-		right: 20%
-		
-	 70% 
-		opacity 1		
-		  
-    100% 
-		opacity .1
-		right 15%
-		
+.barra-estatica-left
+.barra-estatica-right
+	display none
+  
+  
+@keyframes barra-left {
+     0% {
+		opacity: 0;
+		left: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		left: 15%;
+		}
+}
+@keyframes barra-left {
+     0% {
+		opacity: 0;
+		left: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		left: 15%;
+		}
+}
+@-webkit-keyframes barra-right {
+      0% {
+		opacity: 0;
+		right: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		right: 15%;
+		}
+}
+@keyframes barra-right {
+     0% {
+		opacity: 0;
+		right: 20%;
+		}
+	 70% {
+		opacity: 1;		
+		}   
+    100% {
+		opacity: .1;
+		right: 15%;
+		}
+}
 
 
 .blink
@@ -114,13 +148,14 @@ p, span
   margin 0 auto
   position relative
   width 95%
-  width 75%
+ 
 
 .monitor-img
+	display block
 
 .monitor-img-gde
-  display none
-  display block
+	display none
+  
 
 .monitor-home
   font-size 2em
@@ -146,7 +181,7 @@ p, span
   margin-right auto
   position absolute
   right 0
-  top 15%
+  top 18%
   transition 2s
   width 130px
   &:hover
@@ -171,14 +206,27 @@ p, span
 
 	.monitor-img-gde 		
 		display block
-
-
+		
+	.barra-estatica-left
+	.barra-estatica-right
+		top 7%		
+		position absolute
+		display block
+	
+	.barra-estatica-right		
+		right 5%
+	.barra-estatica-left
+		left 5%
 
 
 @media screen and (min-width: 800px) 
 	#datos	
 		bottom 2%
 		font-size 1.2em
+	.rueda
+		width 250px
+		height 250px
+		top 5%
 
 
 
@@ -187,6 +235,9 @@ p, span
 		bottom 5%
 
 	.monitor 	
-		width 75%	
+		width 75%
+		
+	.monitor-img-gde
+		width 1080px
 
 
