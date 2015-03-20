@@ -21,7 +21,7 @@ var gulp = require('gulp'),
 gulp.task('styles', function () { // gulp client_stylus
   gulp.src('stylus/styles.styl')
     .pipe(stylus({use: nib(), compress: true}))
-    .pipe(autoprefixer({ browsers: 'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
     .pipe(gulp.dest('css/'))
 	// .pipe(livereload());
 
