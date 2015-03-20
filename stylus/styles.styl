@@ -8,7 +8,8 @@ body
   font-family 'Ubuntu', sans-serif
   overflow hidden
   font-size 16px
-
+h1
+	margin 0
 img
   max-width 100%
 
@@ -25,7 +26,7 @@ p, span
 #datos
   color #00FFFF
   font-family 'digital'
-  font-size 1em
+  font-size .8em
   width 80%
   left 10%
   position absolute
@@ -72,6 +73,7 @@ p, span
 	display none
   
   
+
 @keyframes barra-left {
      0% {
 		opacity: 0;
@@ -85,20 +87,7 @@ p, span
 		left: 15%;
 		}
 }
-@keyframes barra-left {
-     0% {
-		opacity: 0;
-		left: 20%;
-		}
-	 70% {
-		opacity: 1;		
-		}   
-    100% {
-		opacity: .1;
-		left: 15%;
-		}
-}
-@-webkit-keyframes barra-right {
+@keyframes barra-right {
       0% {
 		opacity: 0;
 		right: 20%;
@@ -111,19 +100,7 @@ p, span
 		right: 15%;
 		}
 }
-@keyframes barra-right {
-     0% {
-		opacity: 0;
-		right: 20%;
-		}
-	 70% {
-		opacity: 1;		
-		}   
-    100% {
-		opacity: .1;
-		right: 15%;
-		}
-}
+
 
 
 .blink
@@ -137,6 +114,11 @@ p, span
   &:before
     content '$ '
 
+// .iconos
+	// color #00FFFF
+	// display none
+	
+	
 .info p, .terminal
   display none
   font-size 0.9em
@@ -147,6 +129,7 @@ p, span
   font-family 'Wallpoet'
   margin 0 auto
   position relative
+  text-align center
   width 95%
  
 
@@ -156,22 +139,80 @@ p, span
 .monitor-img-gde
 	display none
   
-
-.monitor-home
-  font-size 2em
-  left 25%
+.monitores
+  font-size 2em 
+  width 500px
+	
+.monitor-home 
+  left 0
   opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
   position absolute
   top 18%
   transition 2s
 
-.monitor-info
-  font-size 2em
-  left 25%
+.monitor-info  
+  left 0
   opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
   position absolute
-  top 18%
+  top 5%
   transition 2s
+  
+.monitor-estudios
+  left 0
+  opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
+  position absolute
+  top 5%
+  transition 2s
+
+.monitor-habilidades
+  left 0
+  opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
+  position absolute
+  top 5%
+  transition 2s
+  
+.monitor-trabajos
+  left 0
+  opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
+  position absolute
+  top 5%
+  transition 2s
+  
+.monitor-proyectos
+  left 0
+  opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
+  position absolute
+  top 5%
+  transition 2s
+  
+.monitor-contacto
+  left 0
+  opacity 0
+  right 0
+  margin-left auto
+  margin-right auto
+  position absolute
+  top 5%
+  transition 2s
+ 
 
 .rueda
   bottom 15%

@@ -11,60 +11,78 @@
 
 @font-face
 	font-family 'icomoon'
-	src url('fonts/icomoon.eot?m5taku')
-	src url('fonts/icomoon.eot?#iefixm5taku') format('embedded-opentype'),
-	url('fonts/icomoon.woff?m5taku') format('woff'),
-	url('fonts/icomoon.ttf?m5taku') format('truetype'),
-	url('fonts/icomoon.svg?m5taku#icomoon') format('svg')
+	src url('../fonts/icono/icomoon.eot?m5taku')
+	src url('../fonts/icono/icomoon.eot?#iefixm5taku') format('embedded-opentype'),
+		url('../fonts/icono/icomoon.woff?m5taku') format('woff'),
+		url('../fonts/icono/icomoon.ttf?m5taku') format('truetype'),
+		url('../fonts/icono/icomoon.svg?m5taku#icomoon') format('svg')
 	font-weight normal
 	font-style normal
 
 [class^="icon-"], [class*=" icon-"]
+	color #00FFFF
 	font-family 'icomoon'
 	speak none
 	font-style normal
+	font-size 4em
 	font-weight normal
 	font-variant normal
 	text-transform none
 	line-height 1
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
+	animation 2s icon infinite
+	
+@keyframes icon {
+     0% {
+		opacity: .4;		
+		}
+	 50% {
+		opacity: .7;		
+		}   
+    100% {
+		opacity: .4;		
+		}
+}
 
-.icon-estudiosbefore 
+.icon-estudios:before 
 	content "\e600"
 
 
-.icon-proyectosbefore 
+.icon-proyectos:before 
 	content "\e930"
 
 
-.icon-contactobefore 
+.icon-contacto:before 
 	content "\e96f"
 
 
-.icon-habilidadesbefore 
+.icon-habilidades:before 
 	content "\e997"
 
 
-.icon-trabajosbefore 
+.icon-trabajos:before 
 	content "\e9ae"
 
 
-.icon-infobefore 
-	content "\e9ce"
+.icon-info:before 
+	content "\e9ce"	
+	
+	
+	
 
 
-.icon-facebook2before 
+.icon-facebook2:before 
 	content "\ea8d"
 
 
-.icon-twitterbefore 
+.icon-twitter:before 
 	content "\ea91"
 
 
-.icon-github2before 
+.icon-github2:before 
 	content "\eab2"
 
 
-.icon-linkedinbefore 
+.icon-linkedin:before 
 	content "\eac8"

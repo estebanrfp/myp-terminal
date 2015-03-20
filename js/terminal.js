@@ -64,6 +64,26 @@ $(document).ready(function() {
 					$('.monitor-info').css({ "opacity": 1});
 					$('.monitor-home').css({ "opacity": 0});            
             }
+		if (action == 'es') {              
+					$('.monitor-info').css({ "opacity": 0});
+					$('.monitor-estudios').css({ "opacity": 1});            
+            }
+		if (action == 'hab') {              
+					$('.monitor-estudios').css({ "opacity": 0});
+					$('.monitor-habilidades').css({ "opacity": 1});            
+            }
+		if (action == 'tr') {              
+					$('.monitor-habilidades').css({ "opacity": 0});
+					$('.monitor-trabajo').css({ "opacity": 1});            
+            }
+		if (action == 'py') {              
+					$('.monitor-trabajos').css({ "opacity": 0});
+					$('.monitor-proyectos').css({ "opacity": 1});            
+            }
+		if (action == 'cnt') {              
+					$('.monitor-proyectos').css({ "opacity": 0});
+					$('.monitor-contacto').css({ "opacity": 1});            
+            }
         
         if (commands[action]) {
 
