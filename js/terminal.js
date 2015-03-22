@@ -68,6 +68,7 @@ $(document).ready(function() {
 					$('.monitor-trabajos').css({ "opacity": 0});
 					$('.monitor-proyectos').css({ "opacity": 0});
 					$('.monitor-contacto').css({ "opacity": 0});
+					$('.images1').fadeOut(500);
             }
 		if (action == 'es') {              
 					$('.monitor-info').css({ "opacity": 0});
@@ -76,7 +77,8 @@ $(document).ready(function() {
 					$('.monitor-trabajos').css({ "opacity": 0});
 					$('.monitor-proyectos').css({ "opacity": 0});
 					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 1});            
+					$('.monitor-estudios').css({ "opacity": 1});
+					$('.images1').fadeOut(500);					
             }
 		if (action == 'hab') {  
 					$('.monitor-estudios').css({ "opacity": 0});
@@ -85,7 +87,9 @@ $(document).ready(function() {
 					$('.monitor-proyectos').css({ "opacity": 0});
 					$('.monitor-contacto').css({ "opacity": 0});
 					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 1});            
+					$('.monitor-home').css({ "opacity": 0});
+					$('.monitor-habilidades').css({ "opacity": 1});
+					$('.images1').fadeOut(500);					
             }
 		if (action == 'tr') {              
 					$('.monitor-habilidades').css({ "opacity": 0});
@@ -94,7 +98,9 @@ $(document).ready(function() {
 					$('.monitor-info').css({ "opacity": 0});
 					$('.monitor-proyectos').css({ "opacity": 0});
 					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-trabajo').css({ "opacity": 1});            
+					$('.monitor-home').css({ "opacity": 0});
+					$('.monitor-trabajo').css({ "opacity": 1});
+					$('.images1').fadeOut(500);					
             }
 		if (action == 'py') {              
 					$('.monitor-trabajos').css({ "opacity": 0});
@@ -103,7 +109,9 @@ $(document).ready(function() {
 					$('.monitor-trabajos').css({ "opacity": 0});
 					$('.monitor-info').css({ "opacity": 0});
 					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 1});            
+					$('.monitor-home').css({ "opacity": 0});
+					$('.monitor-proyectos').css({ "opacity": 1});
+					$('.images1').fadeOut(500);					
             }
 		if (action == 'cnt') {              
 					$('.monitor-proyectos').css({ "opacity": 0});
@@ -112,7 +120,10 @@ $(document).ready(function() {
 					$('.monitor-trabajos').css({ "opacity": 0});
 					$('.monitor-proyectos').css({ "opacity": 0});
 					$('.monitor-info').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 1});            
+					$('.monitor-home').css({ "opacity": 0});
+					$('.monitor-contacto').css({ "opacity": 1});
+					$('.images1').fadeOut(500);
+					
             }
         
         if (commands[action]) {
