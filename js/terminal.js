@@ -127,6 +127,12 @@ $(document).ready(function() {
 				
 				$('.monitor-home').css({ "opacity": 1});
 				$('.monitor-info').css({ "opacity": 0});
+				$('.monitor-proyectos').css({ "opacity": 0});
+				$('.monitor-estudios').css({ "opacity": 0});
+				$('.monitor-habilidades').css({ "opacity": 0});
+				$('.monitor-trabajos').css({ "opacity": 0});
+				$('.monitor-proyectos').css({ "opacity": 0});					
+				$('.monitor-contacto').css({ "opacity": 0});     
 				$('.images1').fadeOut(500);
             
             }else{
