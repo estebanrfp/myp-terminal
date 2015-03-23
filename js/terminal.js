@@ -99,7 +99,7 @@ $(document).ready(function() {
 					$('.monitor-proyectos').css({ "opacity": 0});
 					$('.monitor-contacto').css({ "opacity": 0});
 					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-trabajo').css({ "opacity": 1});
+					$('.monitor-trabajos').css({ "opacity": 1});
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'py') {              
