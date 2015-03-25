@@ -61,69 +61,69 @@ $(document).ready(function() {
     function terminal(action) {
 		
 		if (action == 'i') {              
-					$('.monitor-info').css({ "opacity": 1});
-					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 0});
-					$('.monitor-trabajos').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 0});
+					$('.monitor-info').slideToggle(500);
+					$('.monitor-home').css({ "display":" none"});
+					$('.monitor-estudios').css({ "display":" none"});
+					$('.monitor-habilidades').css({ "display":" none"});
+					$('.monitor-trabajos').css({ "display":" none"});
+					$('.monitor-proyectos').css({ "display":" none"});
+					$('.monitor-contacto').css({ "display":" none"});
 					$('.images1').fadeOut(500);
             }
 		if (action == 'es') {              
-					$('.monitor-info').css({ "opacity": 0});
-					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 0});
-					$('.monitor-trabajos').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 1});
+					$('.monitor-info').css({ "display":" none"});
+					$('.monitor-home').css({ "display":" none"});
+					$('.monitor-habilidades').css({ "display":" none"});
+					$('.monitor-trabajos').css({ "display":" none"});
+					$('.monitor-proyectos').css({ "display":" none"});
+					$('.monitor-contacto').css({ "display":" none"});
+					$('.monitor-estudios').slideToggle(500);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'hab') {  
-					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-info').css({ "opacity": 0});
-					$('.monitor-trabajos').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 1});
+					$('.monitor-estudios').css({ "display":" none"});
+					$('.monitor-info').css({ "display":" none"});
+					$('.monitor-trabajos').css({ "display":" none"});
+					$('.monitor-proyectos').css({ "display":" none"});
+					$('.monitor-contacto').css({ "display":" none"});
+					$('.monitor-estudios').css({ "display":" none"});
+					$('.monitor-home').css({ "display":" none"});
+					$('.monitor-habilidades').slideToggle(500);
 					$('.titulo').addClass("titulo-p");
 					$('h3').fadeIn(1000);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'tr') {              
-					$('.monitor-habilidades').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 0});
-					$('.monitor-info').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-trabajos').css({ "opacity": 1});
+					$('.monitor-habilidades').css({ "display":" none"});
+					$('.monitor-estudios').css({ "display":" none"});
+					$('.monitor-habilidades').css({ "display":" none"});
+					$('.monitor-info').css({ "display":" none"});
+					$('.monitor-proyectos').css({ "display":" none"});
+					$('.monitor-contacto').css({ "display":" none"});
+					$('.monitor-home').css({ "display":" none"});
+					$('.monitor-trabajos').slideToggle(500);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'py') {              
-					$('.monitor-trabajos').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 0});
-					$('.monitor-trabajos').css({ "opacity": 0});
-					$('.monitor-info').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 0});
-					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 1});
+					$('.monitor-trabajos').css({ "display":" none"});
+					$('.monitor-estudios').css({ "display":" none"});
+					$('.monitor-habilidades').css({ "display":" none"});
+					$('.monitor-trabajos').css({ "display":" none"});
+					$('.monitor-info').css({ "display":" none"});
+					$('.monitor-contacto').css({ "display":" none"});
+					$('.monitor-home').css({ "display":" none"});
+					$('.monitor-proyectos').slideToggle(500);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'cnt') {              
-					$('.monitor-proyectos').css({ "opacity": 0});
-					$('.monitor-estudios').css({ "opacity": 0});
-					$('.monitor-habilidades').css({ "opacity": 0});
-					$('.monitor-trabajos').css({ "opacity": 0});
-					$('.monitor-proyectos').css({ "opacity": 0});
-					$('.monitor-info').css({ "opacity": 0});
-					$('.monitor-home').css({ "opacity": 0});
-					$('.monitor-contacto').css({ "opacity": 1});
+					$('.monitor-proyectos').css({ "display":" none"});
+					$('.monitor-estudios').css({ "display":" none"});
+					$('.monitor-habilidades').css({ "display":" none"});
+					$('.monitor-trabajos').css({ "display":" none"});
+					$('.monitor-proyectos').css({ "display":" none"});
+					$('.monitor-info').css({ "display":" none"});
+					$('.monitor-home').css({ "display":" none"});
+					$('.monitor-contacto').slideToggle(500);
 					$('.images1').fadeOut(500);
 					
             }
@@ -138,14 +138,14 @@ $(document).ready(function() {
                
                 maquina("datos",'Para obtener mis datos, escriba alguna de las opciones listadas...',30);
 				
-				$('.monitor-home').css({ "opacity": 1});
-				$('.monitor-info').css({ "opacity": 0});
-				$('.monitor-proyectos').css({ "opacity": 0});
-				$('.monitor-estudios').css({ "opacity": 0});
-				$('.monitor-habilidades').css({ "opacity": 0});
-				$('.monitor-trabajos').css({ "opacity": 0});
-				$('.monitor-proyectos').css({ "opacity": 0});					
-				$('.monitor-contacto').css({ "opacity": 0});     
+				$('.monitor-home').show(1000);
+				$('.monitor-info').css({ "display":" none"});
+				$('.monitor-proyectos').css({ "display":" none"});
+				$('.monitor-estudios').css({ "display":" none"});
+				$('.monitor-habilidades').css({ "display":" none"});
+				$('.monitor-trabajos').css({ "display":" none"});
+				$('.monitor-proyectos').css({ "display":" none"});					
+				$('.monitor-contacto').css({ "display":" none"});     
 				$('.images1').fadeOut(500);
             
             }else{
