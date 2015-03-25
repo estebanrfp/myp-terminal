@@ -88,6 +88,7 @@ $(document).ready(function() {
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-estudios').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
+					$('h1').css({ "display":"inline-block"});
 					$('.monitor-habilidades').slideToggle(500);
 					$('.titulo').addClass("titulo-p");
 					$('h3').fadeIn(1000);
@@ -210,6 +211,43 @@ $(document).ready(function() {
     };
 
 });
+
+function desplegarHab1() {   
+	    $('.ul-1').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.habilidades1').slideToggle(0);
+			
+};
+function desplegarHab2() {   
+	    $('.ul-2').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.habilidades2').slideToggle(0);
+			
+};
+function desplegarHab3() {   
+	    $('.ul-3').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.habilidades3').slideToggle(0);
+			
+};
+function desplegarHab4() {   
+	    $('.ul-4').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.habilidades4').slideToggle(0);
+			
+};
+function desplegarHab5() {   
+	    $('.ul-5').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.habilidades5').slideToggle(0);
+			
+};
+
+$('.habilidades1').click ( desplegarHab1 )
+$('.habilidades2').click ( desplegarHab2 )
+$('.habilidades3').click ( desplegarHab3 )
+$('.habilidades4').click ( desplegarHab4 )
+$('.habilidades5').click ( desplegarHab5 )
 
 
 	
