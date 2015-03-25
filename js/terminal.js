@@ -89,6 +89,8 @@ $(document).ready(function() {
 					$('.monitor-estudios').css({ "opacity": 0});
 					$('.monitor-home').css({ "opacity": 0});
 					$('.monitor-habilidades').css({ "opacity": 1});
+					$('.titulo').addClass("titulo-p");
+					$('h3').fadeIn(1000);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'tr') {              
@@ -208,3 +210,6 @@ $(document).ready(function() {
     };
 
 });
+
+
+	
