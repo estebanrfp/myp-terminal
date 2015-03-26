@@ -133,7 +133,10 @@ $(document).ready(function() {
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-info').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
+					$('h2').css({ "display":"inline-block"});
 					$('.monitor-contacto').slideToggle(500);
+					$('.titulo').addClass("titulo-p");
+					$('h3').fadeIn(1000);
 					$('.images1').fadeOut(500);
 					
             }
