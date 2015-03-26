@@ -77,7 +77,7 @@ $(document).ready(function() {
 					$('.monitor-trabajos').css({ "display":" none"});
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
-					$('h1').css({ "display":"inline-block"});
+					$('h2').css({ "display":"inline-block"});
 					$('.monitor-estudios').slideToggle(500);
 					$('.titulo').addClass("titulo-p");
 					$('h3').fadeIn(1000);
@@ -91,7 +91,7 @@ $(document).ready(function() {
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-estudios').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
-					$('h1').css({ "display":"inline-block"});
+					$('h2').css({ "display":"inline-block"});
 					$('.monitor-habilidades').slideToggle(500);
 					$('.titulo').addClass("titulo-p");
 					$('h3').fadeIn(1000);
@@ -105,7 +105,7 @@ $(document).ready(function() {
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
-					$('h1').css({ "display":"inline-block"});
+					$('h2').css({ "display":"inline-block"});
 					$('.monitor-trabajos').slideToggle(500);
 					$('.titulo').addClass("titulo-p");
 					$('h3').fadeIn(1000);					
@@ -119,7 +119,7 @@ $(document).ready(function() {
 					$('.monitor-info').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
-					$('h1').css({ "display":"inline-block"});
+					$('h2').css({ "display":"inline-block"});
 					$('.monitor-proyectos').slideToggle(500);
 					$('.titulo').addClass("titulo-p");
 					$('h3').fadeIn(1000);
