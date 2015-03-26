@@ -105,7 +105,10 @@ $(document).ready(function() {
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
-					$('.monitor-trabajos').slideToggle(500);					
+					$('h1').css({ "display":"inline-block"});
+					$('.monitor-trabajos').slideToggle(500);
+					$('.titulo').addClass("titulo-p");
+					$('h3').fadeIn(1000);					
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'py') {              
@@ -246,6 +249,8 @@ function desplegarHab5() {
 			
 };
 
+
+
 function desplegarEst1() {   
 	    $('.ul-1-est').slideToggle(0);
 	    $('h3').slideToggle(0);
@@ -265,6 +270,27 @@ function desplegarEst3() {
 			
 };
 
+
+
+function desplegarTr1() {   
+	    $('.ul-1-tr').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.trabajos1').slideToggle(0);
+			
+};
+function desplegarTr2() {   
+	    $('.ul-2-tr').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.trabajos2').slideToggle(0);
+			
+};
+function desplegarTr3() {   
+	    $('.ul-3-tr').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.trabajos3').slideToggle(0);
+			
+};
+
 $('.habilidades1').click ( desplegarHab1 )
 $('.habilidades2').click ( desplegarHab2 )
 $('.habilidades3').click ( desplegarHab3 )
@@ -274,6 +300,10 @@ $('.habilidades5').click ( desplegarHab5 )
 $('.estudios1').click ( desplegarEst1 )
 $('.estudios2').click ( desplegarEst2 )
 $('.estudios3').click ( desplegarEst3 )
+
+$('.trabajos1').click ( desplegarTr1 )
+$('.trabajos2').click ( desplegarTr2 )
+$('.trabajos3').click ( desplegarTr3 )
 
 
 	
