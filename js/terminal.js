@@ -119,7 +119,10 @@ $(document).ready(function() {
 					$('.monitor-info').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
+					$('h1').css({ "display":"inline-block"});
 					$('.monitor-proyectos').slideToggle(500);
+					$('.titulo').addClass("titulo-p");
+					$('h3').fadeIn(1000);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'cnt') {              
@@ -291,6 +294,25 @@ function desplegarTr3() {
 			
 };
 
+function desplegarProy1() {   
+	    $('.ul-1-py').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.proyectos1').slideToggle(0);
+			
+};
+function desplegarProy2() {   
+	    $('.ul-2-py').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.proyectos2').slideToggle(0);
+			
+};
+function desplegarProy3() {   
+	    $('.ul-3-py').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.proyectos3').slideToggle(0);
+			
+};
+
 $('.habilidades1').click ( desplegarHab1 )
 $('.habilidades2').click ( desplegarHab2 )
 $('.habilidades3').click ( desplegarHab3 )
@@ -304,6 +326,11 @@ $('.estudios3').click ( desplegarEst3 )
 $('.trabajos1').click ( desplegarTr1 )
 $('.trabajos2').click ( desplegarTr2 )
 $('.trabajos3').click ( desplegarTr3 )
+
+$('.proyectos1').click ( desplegarProy1 )
+$('.proyectos2').click ( desplegarProy2 )
+$('.proyectos3').click ( desplegarProy3 )
+
 
 
 	
