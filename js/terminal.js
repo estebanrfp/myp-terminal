@@ -216,33 +216,52 @@ $(document).ready(function() {
 });
 
 function desplegarHab1() {   
-	    $('.ul-1').slideToggle(0);
+	    $('.ul-1-hab').slideToggle(0);
 	    $('h3').slideToggle(0);
 	    $('.habilidades1').slideToggle(0);
 			
 };
 function desplegarHab2() {   
-	    $('.ul-2').slideToggle(0);
+	    $('.ul-2-hab').slideToggle(0);
 	    $('h3').slideToggle(0);
 	    $('.habilidades2').slideToggle(0);
 			
 };
 function desplegarHab3() {   
-	    $('.ul-3').slideToggle(0);
+	    $('.ul-3-hab').slideToggle(0);
 	    $('h3').slideToggle(0);
 	    $('.habilidades3').slideToggle(0);
 			
 };
 function desplegarHab4() {   
-	    $('.ul-4').slideToggle(0);
+	    $('.ul-4-hab').slideToggle(0);
 	    $('h3').slideToggle(0);
 	    $('.habilidades4').slideToggle(0);
 			
 };
 function desplegarHab5() {   
-	    $('.ul-5').slideToggle(0);
+	    $('.ul-5-hab').slideToggle(0);
 	    $('h3').slideToggle(0);
 	    $('.habilidades5').slideToggle(0);
+			
+};
+
+function desplegarEst1() {   
+	    $('.ul-1-est').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.estudios1').slideToggle(0);
+			
+};
+function desplegarEst2() {   
+	    $('.ul-2-est').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.estudios2').slideToggle(0);
+			
+};
+function desplegarEst3() {   
+	    $('.ul-3-est').slideToggle(0);
+	    $('h3').slideToggle(0);
+	    $('.estudios3').slideToggle(0);
 			
 };
 
@@ -251,6 +270,10 @@ $('.habilidades2').click ( desplegarHab2 )
 $('.habilidades3').click ( desplegarHab3 )
 $('.habilidades4').click ( desplegarHab4 )
 $('.habilidades5').click ( desplegarHab5 )
+
+$('.estudios1').click ( desplegarEst1 )
+$('.estudios2').click ( desplegarEst2 )
+$('.estudios3').click ( desplegarEst3 )
 
 
 	
