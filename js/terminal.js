@@ -60,14 +60,14 @@ $(document).ready(function() {
 
     function terminal(action) {
 		
-		if (action == 'i') {              
-					$('.monitor-info').slideToggle(500);
+		if (action == 'i') {  				
 					$('.monitor-home').css({ "display":" none"});
 					$('.monitor-estudios').css({ "display":" none"});
 					$('.monitor-habilidades').css({ "display":" none"});
 					$('.monitor-trabajos').css({ "display":" none"});
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
+					$('.monitor-info').slideToggle(500);
 					$('.images1').fadeOut(500);
             }
 		if (action == 'es') {              
@@ -77,7 +77,10 @@ $(document).ready(function() {
 					$('.monitor-trabajos').css({ "display":" none"});
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
+					$('h1').css({ "display":"inline-block"});
 					$('.monitor-estudios').slideToggle(500);
+					$('.titulo').addClass("titulo-p");
+					$('h3').fadeIn(1000);
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'hab') {  
@@ -102,7 +105,7 @@ $(document).ready(function() {
 					$('.monitor-proyectos').css({ "display":" none"});
 					$('.monitor-contacto').css({ "display":" none"});
 					$('.monitor-home').css({ "display":" none"});
-					$('.monitor-trabajos').slideToggle(500);
+					$('.monitor-trabajos').slideToggle(500);					
 					$('.images1').fadeOut(500);					
             }
 		if (action == 'py') {              
@@ -139,7 +142,7 @@ $(document).ready(function() {
                
                 maquina("datos",'Para obtener mis datos, escriba alguna de las opciones listadas...',30);
 				
-				$('.monitor-home').show(1000);
+				$('.monitor-home').slideToggle(500);
 				$('.monitor-info').css({ "display":" none"});
 				$('.monitor-proyectos').css({ "display":" none"});
 				$('.monitor-estudios').css({ "display":" none"});
