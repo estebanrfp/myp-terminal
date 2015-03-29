@@ -1,27 +1,27 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Wallpoet);
+@import url(http://fonts.googleapis.com/css?family=Wallpoet);
 @import "fonts.styl"
 @import "normalize.styl"
 
 a
   color #CFD8DC
   text-decoration none
-  
-  
+
+
 body
-  background #222
+  background #030303
   color white
   font-family Consolas, monospace
-  font-size 16px  
+  font-size 16px
   overflow hidden
-  
+
 footer
-	background #222
-	border-top 2px solid #12B3B3
+	background #030303
+	border-top 2px solid #226666
 	bottom 0
 	height 20px
 	position fixed
 	width 100%
-	
+
 h1
 figure.perfil
 	display inline-block
@@ -29,9 +29,9 @@ figure.perfil
 	margin 0
 	img
 		border-radius 50%
-h1	
+h1
 	font-size 1em
-	font-weight normal	
+	font-weight normal
 h2
 	margin 0
 h3
@@ -41,9 +41,9 @@ h3
 ul
 	display none
 header
-	background #12B3B3
+	background #226666
 	text-align center
-	padding-top 3px	
+	padding-top 3px
 img
   max-width 100%
 
@@ -56,7 +56,7 @@ input
 
 p, span
   margin 0px
-  
+
 #datos
   border-top 1px dotted #00FFFF
   bottom 5%
@@ -69,36 +69,36 @@ p, span
   position absolute
   width 80%
 
-#terminal  
+#terminal
   bottom 0
-  color #999   
+  color #999
   left 0
   position absolute
   width 100%
- 
 
-#title  
+
+#title
   p
     color #CFD8DC
-    font-size 1em    
+    font-size 1em
 
 .barra-left
   left 20%
   position absolute
-  top 13% 
+  top 13%
   animation 3s barra-left infinite
 
 .barra-right
   position absolute
   right 20%
-  top 13% 
+  top 13%
   animation 3s barra-right infinite
 
 .barra-estatica-left
 .barra-estatica-right
 	display none
-  
-  
+
+
 
 @keyframes barra-left {
      0% {
@@ -106,8 +106,8 @@ p, span
 		left: 20%;
 		}
 	 70% {
-		opacity: 1;		
-		}   
+		opacity: 1;
+		}
     100% {
 		opacity: .1;
 		left: 15%;
@@ -119,8 +119,8 @@ p, span
 		right: 20%;
 		}
 	 70% {
-		opacity: 1;		
-		}   
+		opacity: 1;
+		}
     100% {
 		opacity: .1;
 		right: 15%;
@@ -134,12 +134,12 @@ p, span
 	display inline-block
 	height 13px
 	width 5px
- 
+
 
 .command
   &:before
     content '$ '
-	
+
 .contacto
 	h3
 		font-size 1.5em
@@ -147,12 +147,12 @@ p, span
 		text-align left
 		text-decoration none
 		width 150px
-		
+
 .footer
-	color #12B3B3	
+	color #226666
 	line-height 20px
-	margin-left .5em	
-	
+	margin-left .5em
+
 .habilidades
 .estudios
 .trabajos
@@ -168,15 +168,15 @@ p, span
 	li
 		list-style none
 
-.habilidades	
+.habilidades
 		margin 0 auto
 		text-align left
 		width 60%
-		
+
 .ico-cnt
 	font-size 1em
-	
-		
+
+
 .info p, .terminal
   display none
   font-size 0.9em
@@ -189,21 +189,21 @@ p, span
   position relative
   text-align center
   width 95%
- 
+
 
 .monitor-img
 	display block
 
 .monitor-img-gde
 	display none
-  
+
 .monitores
-  font-size 2em 
+  font-size 2em
   width 500px
 .monitores
 		ul
 			font-size 1.2em
-.monitor-home 
+.monitor-home
   left 0
   display none
   right 0
@@ -211,9 +211,9 @@ p, span
   margin-right auto
   position absolute
   top 18%
-  
 
-.monitor-info  
+
+.monitor-info
   left 0
   margin-left auto
   margin-right auto
@@ -221,8 +221,8 @@ p, span
   position absolute
   right 0
   top 10%
- 
-  
+
+
 .monitor-estudios
   left 0
   margin-left auto
@@ -231,7 +231,7 @@ p, span
   position absolute
   right 0
   top 10%
- 
+
 
 .monitor-habilidades
   left 0
@@ -241,10 +241,10 @@ p, span
   position absolute
   right 0
   top 5%
-  
-		
 
-  
+
+
+
 .monitor-trabajos
   left 0
   margin-left auto
@@ -253,8 +253,8 @@ p, span
   position absolute
   right 0
   top 10%
-  
-  
+
+
 .monitor-proyectos
   left 0
   margin-left auto
@@ -263,8 +263,8 @@ p, span
   position absolute
   right 0
   top 10%
-  
-  
+
+
 .monitor-contacto
   left 0
   margin-left auto
@@ -273,8 +273,8 @@ p, span
   position absolute
   right 0
   top 10%
-  
- 
+
+
 
 .rueda
   bottom 15%
@@ -303,67 +303,67 @@ p, span
   border-top 1px solid #CFD8DC
 
 .titulo
-	transition 2s	
+	transition 2s
 .titulo-p
 	font-size .5em
 	transition 2s
 	margin-bottom 2em
 
-	
 
-		
-@media screen and (min-width: 450px) 
 
-	
-	.habilidades		
-		width 55%		
 
-	.monitor-img 
+@media screen and (min-width: 450px)
+
+
+	.habilidades
+		width 55%
+
+	.monitor-img
 		display none
 
-	.monitor-img-gde 		
+	.monitor-img-gde
 		display block
-		
+
 	.barra-estatica-left
 	.barra-estatica-right
-		top 7%		
+		top 7%
 		position absolute
 		display block
-	
-	.barra-estatica-right		
+
+	.barra-estatica-right
 		right 5%
 	.barra-estatica-left
 		left 5%
 
-@media screen and (min-width: 600px) 
-	.habilidades		
-		width 45%	
+@media screen and (min-width: 600px)
+	.habilidades
+		width 45%
 
-@media screen and (min-width: 800px) 
-	#datos	
+@media screen and (min-width: 800px)
+	#datos
 		bottom 2%
 		font-size 1.2em
 	.rueda
 		width 250px
 		height 250px
 		top 5%
-	.habilidades		
+	.habilidades
 		width 30%
 
 
-@media screen and (min-width: 917px) 
-	#datos		
+@media screen and (min-width: 917px)
+	#datos
 		bottom 5%
 
-	.monitor 	
+	.monitor
 		width 75%
-		
+
 	.monitor-img-gde
 		width 1080px
-	.habilidades		
+	.habilidades
 		width 39%
 
-@media screen and (min-width: 1150px) 
-	
-	.habilidades		
+@media screen and (min-width: 1150px)
+
+	.habilidades
 		width 27%
