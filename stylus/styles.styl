@@ -12,7 +12,7 @@ body
   color white
   font-family Consolas, monospace
   font-size 16px
-  overflow hidden
+  overflow scroll
 
 footer
 	background #030303
@@ -21,6 +21,7 @@ footer
 	height 20px
 	position fixed
 	width 100%
+
 
 h1
 figure.perfil
@@ -69,12 +70,8 @@ p, span
   position absolute
   width 80%
 
-#terminal
-  bottom 2.5em
-  color #999
-  left 0
-  position absolute
-  width 100%
+
+
 
 
 #title
@@ -185,10 +182,11 @@ p, span
 .monitor
   color #CFD8DC
   font-family 'Wallpoet'
-  margin .5em auto
+  margin 1em auto
   position relative
   text-align center
   width 95%
+  overflow hidde
 
 
 .monitor-img
@@ -295,12 +293,23 @@ p, span
     -ms-transform rotate(360deg)
 
 .terminal
-  overflow hidden
-  padding-bottom 24px
+  // overflow hidden
+  padding-bottom 4px
   padding-left 5px
   padding-top 4px
-  height 145px
+  height 150px
   border-top 1px solid #CFD8DC
+
+
+#terminal
+  color #999
+  left 0
+  position relative
+  margin-top 2%
+  width 100%
+  height 150px
+
+
 
 .titulo
 	transition 2s

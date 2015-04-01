@@ -147,6 +147,7 @@ $(document).ready(function() {
 
             if (action == 'help') {
 
+                $('#answer, .info').empty();
                 $('#answer').append('<p class="answer">'+x+'</p>');
 
                 maquina("datos",'Para obtener mis datos, escriba alguna de las opciones listadas...',30);
@@ -160,7 +161,8 @@ $(document).ready(function() {
 				$('.monitor-proyectos').css({ "display":" none"});
 				$('.monitor-contacto').css({ "display":" none"});
 				$('.images1').fadeOut(500);
-        (action == "clear")
+        // $('.terminal').scrollTop(150,150);
+
 
             }else{
 
