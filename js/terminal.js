@@ -161,8 +161,6 @@ $(document).ready(function() {
 				$('.monitor-proyectos').css({ "display":" none"});
 				$('.monitor-contacto').css({ "display":" none"});
 				$('.images1').fadeOut(500);
-        // $('.terminal').scrollTop(150,150);
-
 
             }else{
 
